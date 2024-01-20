@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+  </head>
+  <body>
+    <h1 class="visually-hidden">aslep contact</h1>
+    <!-- header -->
+    <header class="header">
+      <div class="container header__container">
+        <a href="index.html" class="logo">
+          <img src="./images/Logo.svg" alt="logo" width="127" height="54"
+        /></a>
+
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__nav__link" href="#">Рус.</a>
+              <img
+                src="./images/arrow-bottom.svg"
+                alt="arrow icon"
+                width="10.8"
+                height="6"
+              />
+            </li>
+            <li class="header__item">
+              <a class="header__nav__link" href="index.html">Продукты</a>
+            </li>
+
+            <li class="header__item">
+              <a class="header__nav__link" href="#">Купить</a>
+            </li>
+
+            <li class="header__item">
+              <a class="header__nav__link" href="#">Партнерам</a>
+            </li>
+
+            <li class="header__item">
+              <a class="header__nav__link" href="#">О нас</a>
+            </li>
+
+            <li class="header__item">
+              <a
+                class="header__nav__link header__nav__link-active"
+                href="contact.html"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__right">
+          <span
+            ><img src="./images/phone-icon.svg" alt="phone icon" />
+            <a class="header__tel" href="tel:77777777777">+7 777 777 77 77</a>
+            <img src="./images/arrow-bottom.svg" alt="arrow"
+          /></span>
+          <a class="header__login without-background-link" href="#">Войти</a>
+          <a class="header__registration with-background-link" href="#"
+            >Регистрация</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- /header -->
+
+    <!-- main -->
+
+    <main>
+      <section class="contact">
+        <div class="container contact__container">
+          <form
+            class="form"
+            method="post"
+            action="https://html.echo.academy.ru"
+          >
+            <h2 class="form__title">Регистрация</h2>
+
+            <label for="email" class="form__label"
+              >E-mail
+              <input type="email" id="email" class="form__input" required />
+            </label>
+
+            <label for="phone" class="form__label"
+              >Номер телефона
+              <input type="number" id="phone" class="form__input" required />
+            </label>
+
+            <label for="password" class="form__label"
+              >Пароль
+              <input
+                type="password"
+                id="password"
+                class="form__input"
+                required
+              />
+            </label>
+
+            <label for="password-check" class="form__label"
+              >Подтвердите пароль
+              <input
+                type="password"
+                id="password-check"
+                class="form__input"
+                required
+              />
+            </label>
+
+            <input type="checkbox" id="checkbox" class="checkbox" hidden />
+            <label for="checkbox" class="form__checkbox" required>
+              Принимаю
+              <a href="#"> условия пользования системы alsep</a>
+            </label>
+
+            <button class="form__button with-background-link" type="submit">
+              Регистрация
+            </button>
+          </form>
+
+          <div class="contact__right">
+            <h2 class="right__title">Вам понадобятся</h2>
+            <ul class="right__list">
+              <li class="right__item">
+                <h3 class="right__item__title">Шаг 1</h3>
+                <p class="right__item__text">регистрация в системе:</p>
+                <ul>
+                  <li>E-mail</li>
+                  <li>Телефон</li>
+                  <li>Пароль</li>
+                  <li>Подтверждение</li>
+                </ul>
+              </li>
+
+              <li class="right__item">
+                <h3 class="right__item__title">Шаг 2</h3>
+                <p class="right__item__text">заполнение реквизитов компании:</p>
+
+                <ul>
+                  <li>БИН</li>
+                  <li>Название</li>
+                  <li>Юридический адрес</li>
+                  <li>Телефон</li>
+                  <li>Реквиизиты банковского счета</li>
+                  <li>Код Окэд</li>
+                  <li>Плательщикам НДС номер и серия ндс</li>
+                  <li>ЭЦП</li>
+                  <li>Почта кассира</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
